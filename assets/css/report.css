@@ -1,0 +1,41 @@
+@page {
+  size: auto; /* auto is the initial value */
+  margin: 0mm; /* this affects the margin in the printer settings */
+}
+@font-face {
+  font-family: 'Times','Arial','Pristina','Century Gothic';
+  src: url('./fonts/times.ttf','./dist/fonts/arial.ttf','./dist/fonts/pristina.ttf','./dist/fonts/asd.ttf');
+}
+
+body {
+  color: #0000ff;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Times';
+  font-weight: bold;
+  text-align: center;
+}
+p {
+  font-family: 'Pristina';
+  font-size: 24pt;
+  font-weight: bold;
+}
+img {
+  opacity: 0.8;
+}
+
+.flip img {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.kotak {
+  padding: 10px 10px;
+  border: 3px solid #0000ff;
+  /*background: #ffffff;*/
+  width: 100%;
+}
